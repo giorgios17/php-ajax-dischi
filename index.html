@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js" defer></script>
+    <title>Php Ajax Dischi</title>
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <img src="img/spotify-logo.png" alt="logo">
+        </header>
+        <main>
+            <div class="container">
+                <div class="gs-card" v-for="(song, index) in songList">
+                    <img :src="song.poster" :alt="song.author" />
+                    <h5>{{ song.title }}</h5>
+                    <p>{{ song.author }}</p>
+                    <p>{{ song.year }}</p>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
