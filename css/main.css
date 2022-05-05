@@ -1,0 +1,37 @@
+body {
+    background-color: #1e2d3b;
+}
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gs-card {
+    text-align: center;
+    background-color: #2e3a46;
+    padding: 20px 15px;
+    width: 200px;
+    margin: 10px 20px;
+}
+
+h5 {
+    color: white;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0px 5px;
+}
+
+p {
+    color: gray;
+    margin: 0;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
