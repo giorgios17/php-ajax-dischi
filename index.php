@@ -17,8 +17,12 @@ include "data.php";
 </head>
 
 <body>
-    <div class="container">
-        <?php 
+    <header>
+        <img src="img/spotify-logo.png" alt="logo">
+    </header>
+    <main>
+        <div class="container">
+            <?php 
             foreach($dbSong as $song){
                 echo "<div class='gs-card'>";
                 echo '<img class="cardImg w-75" src="' . $song["poster"] .      '"alt="immagine" />';
@@ -28,7 +32,8 @@ include "data.php";
                 echo "</div>";
             }
         ?>
-    </div>
+        </div>
+    </main>
 </body>
 
 </html>
